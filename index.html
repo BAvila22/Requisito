@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+        <main>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>Regístrate</h3>
+                        <p>Crea una cuenta para acceder y poder realizar tus pedidos.</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                         <h2>Iniciar Sesión</h2>
+                         <label for="correo">Correo Electrónico:</label>
+                         <input type="email" id="correo" name="correo" required>
+                         <label for="contraseña">Contraseña:</label>
+                         <input placeholder="Contraseña" type="password" id="contraseña" name="contraseña" required>
+                         <button>Entrar</button>
+                         <!-- Recuperar contraseña -->
+                         <a href="recuperacontraseña.html" class="link">¿Olvidaste tu contraseña?</a>
+                    </form>
+                  <form action="" class="formulario_register">
+                    <h2>Ingresa tus datos</h2>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo_registro" name="correo_registro" required>
+                    <label for="contraseña">Contraseña:</label>
+                    <input placeholder="Contraseña" type="password" id="contraseña_registro" name="contraseña_registro" required>
+                    <label for="run">Run:</label>
+                    <input placeholder="Run" type="number" id="run" name="run" required>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input placeholder="Fecha" type="date" id="fecha" name="fecha" required>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input placeholder="Nombre Completo" type="text" id="nombre" name="nombre" required>
+                    <label for="sexo">Sexo:</label> 
+                    <select id="sexo" name="sexo"> 
+                      <option value="hombre">Hombre</option>
+                      <option value="mujer">Mujer</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    <label for="direccion">Dirección:</label>
+                    <input placeholder="Dirección" type="text" id="direccion" name="direccion" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input placeholder="Teléfono" type="tel" id="telefono" name="telefono" required>
+                    <button>Registrarse</button>
+                  </form>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/script.js"></script>
+</body>
+</html>
